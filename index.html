@@ -1,111 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Habib's website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Your Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: #555;
+}
+
+nav ul li:hover > .dropdown-menu {
+  display: block;
+}
+    
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+  .profile-img {
+  max-width: 300px;
+  height: auto; 
+  margin-top: 100px;
+  margin-right: 100px;
+}
+    
+    .about-me {
+      flex: 1;
+      padding:  20px;
+      margin-left: 100px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 
 <body>
-  <table cellspacing="30">
-    <tbody>
-      <tr>
-        <td><img src="GG-modified.png" alt="Profile Picture"></td>
-        <td>
-          <h1>Habib ur rehman</h1>
-          <p>
-            <em>Going to be <a href="https://admissions.umt.edu.pk/prog/bbse.aspx"><strong>Software Engineer</strong></a> .</em>
-          </p>
-          <p> I am going to be a future software engineer and will make my own company one day inshaAllah &#128151;.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <nav> 
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li > <a href="Contact.html">Contact</a> </li>
+    </ul>
+  </nav>
 
-  <hr size="2" noshade color="black">
-  <br>
-  <h3>Education</h3>
-  <ul>
-    <li> Done my matric from PIES.</li>
-    <li> Done my FSC from ICB.</li>
-    <li> Doing my BS SE from UMT.</li>
-  </ul>
-  <hr size="2" noshade colo="black">
-  <h3>My Hobbies</h3>
-  <ol>
-    <li><a href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en&gl=US">Games</a></li>
-    <li> <a href="https://www.foodpanda.pk/?gclid=Cj0KCQjwpf2IBhDkARIsAGVo0D23DRZEydfUqjI37sZlmO80wvTNloUoBTsVp9aofYbVgXre81h_QucaAoASEALw_wcB">Eat</a> </li>
-    <li>Sleep</li>
-  </ol>
-  <hr size="2" noshade colo="black">
-  <h3>My Sports Achievement</h3>
-  <table border="1" cellspacing="10">
-    <thead>
-      <tr>
-        <th> Dates</th>
-        <th> Sports </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td> 2020 </td>
-        <td>Won three sports certificates</td>
-      </tr>
-      <tr>
-        <td>2019</td>
-        <td>Got second postion in inter collage's </td>
-      </tr>
-    </tbody>
-  </table>
-  <hr size="2" noshade colo="black">
-  <h3>Skills</h3>
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <table cellspacing="10">
-            <tbody>
-              <tr>
-                <td>Progaming Fundaments </td>
-                <td> &#11088;&#11088;&#11088;&#11088;&#11088;</td>
-              </tr>
-              <tr>
-                <td>Object Oriented Programing</td>
-                <td>&#11088;&#11088;&#11088;</td>
-              </tr>
-              <tr>
-                <td>Web Development</td>
-                <td>&#11088;&#11088;&#11088;</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td>
-          <table cellspacing="10">
-            <tbody>
-              <tr>
-                <td>Photography</td>
-                <td>&#11088;&#11088;&#11088;&#11088;</td>
-              </tr>
-              <tr>
-                <td>Cooking</td>
-                <td>&#11088;&#11088;&#11088;</td>
-              </tr>
-              <tr>
-                <td>Shooting</td>
-                <td>&#11088;&#11088;</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <hr size="2" noshade color="black">
-  <h3> <a href="contacts.html"><strong>Contact Me </strong></a></h3>
+    <section id="about">
+      <div class="about-me">
+        <h1>Hi My Name is Habib ur Rehman!</h1>
+        <p>I am Software Engeerning student studing.</p>
+      </div>
+      <img class="profile-img" src="/images/pic.png" alt="Profile Image">
+    </section>
 
-
+    
+  
 </body>
 
 </html>
