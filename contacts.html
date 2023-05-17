@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Contacts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    form {
+      max-width: 400px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 
 <body>
-  <h2>My Contact Details</h2>
-  <p > My address </p>
-  <p> 030000000000</p>
-  <p>kingmaker@gmail.com</p>
-  <hr>
+  <h1>Contact Me</h1>
+  <form action="#" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
 
-  <form class="" action="mailto:info@hsnk81828@gmail.com" method="post" enctype="text/plain">
-    <label for="">Your Name :</label>
-    <input type="text" name="yourName" value=""><br>
-    <label for="">Your Gmail :</label>
-    <input type="email" name="yourGmail" value=""><br>
-    <input type="submit" value="Save" ><br>
-    <label for="">Your Message :</label><br>
-    <textarea name="yourName" rows="10" cols="40"></textarea>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+    <input type="submit" value="Submit">
   </form>
-
-
 </body>
 
 </html>
